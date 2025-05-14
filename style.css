@@ -1,0 +1,95 @@
+
+header, footer {background-color: #0F52BA;color: silver;
+}
+body {background-color: #1c2833;}
+
+/* Body grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+header, footer {
+    grid-column: 1/13;
+    padding: 1rem;
+    border-style: solid;
+    border-color: silver;
+}
+main {
+    grid-column: 1/9;
+}
+aside {
+    grid-column: 9/13;
+}
+/* main grid container */
+.main-grid-container {
+    display: grid;
+    grid-template-columns:repeat(5,1);
+}
+
+/* Images */
+.images-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 200px;
+    column-gap: 400px;
+    padding-left: 20px;
+}
+.images-descriptions img {
+    max-width: 100%;  
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+    
+
+/* making portrait work */
+.portrait {
+    flex: 0.8 10 100px;
+}
+
+
+/* Nav Bar */
+nav ul {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0rem;
+    display: flex;
+    gap: 0.5rem;
+}
+/* Styling */
+
+nav a {
+    color: silver;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #0608b2;
+    border-radius: 0.25rem;
+    border-style: solid;
+}
+nav a:hover {
+    background-color: skyblue;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+/* Aside */
+.aside-grid-container {
+    display: grid;
+    grid-template-columns:repeat(5,1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+#aside-text {
+    background-color: #212121;
+    color: #fefae0;
+    border-style: solid;
+    border-color: silver;
+    padding-left: 10px;
+    padding-right: 10px;
+}
