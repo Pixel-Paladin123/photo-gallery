@@ -4,7 +4,9 @@ body {
 section {display: flex;
 flex-direction: column;
 gap: 0.5rem;
-align-items: center;}
+align-items: center;
+
+}
 
 section img {max-width: 300px;}
 
@@ -14,7 +16,6 @@ section img {max-width: 300px;}
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-columns: auto;
-        background-color: green;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

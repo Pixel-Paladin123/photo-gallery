@@ -3,27 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-
-    <title></title>
-
+    <meta name="description" content="Website for a image gallery" />
+    <title>Photo gallery</title>
     <link rel="icon" href="" type="image/png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylephone.css">
   </head>
-  <body>
+  <body class="grid-container">
     <header>
-      <h1></h1>
-      <nav></nav>
-    </header>
-    <main>
-      <section>
-        <img src="media1.jpg"alt="A picture of blue flowers on a black background"/>
-        <img src="media2.jpg" alt="A picture of blue hills under white skys" />
-        <img src="media3.jpg" alt="A top down picture of a ocean view" />
-        <img src="media4.jpg" alt="Picture of a ice wall" />
+      <h1>Photo gallery</h1>
+      <nav>
+        <ul>
+          <li><a class="active" href="media1.jpg">Image 1</a></li>
+          <li><a href="media2.jpg">Image 2</a></li>
+          <li><a href="media3.jpg">Image 3</a></li>
+          <li><a href="media4.jpg">Image 4</a></li>
+        </ul>
+       </nav>
+      </header>
+    <main class="main-grid-container">
+      <section class="images-descriptions">
+        <div id="image1"><img src="media1.jpg"alt="A picture of blue flowers on a black background"/></div>
+        <div id="image2"><img src="media2.jpg" alt="A picture of blue hills under white skys" /></div>
+        <div id="image3"><img class="portrait" src="media3.jpg" alt="A top down picture of a ocean view" /></div>
+        <div id="image4"><img src="media4.jpg" alt="Picture of a ice wall" /></div>
       </section>
     </main>
-    <aside></aside>
+    <aside class="aside-grid-container">
+      <section id="aside-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed neque id mi cursus luctus. Maecenas sodales ex ut risus scelerisque convallis sit amet in lacus. Etiam gravida dapibus finibus. Aliquam erat volutpat. Duis in turpis rhoncus, gravida libero nec, suscipit nunc. Fusce vulputate porta nunc et aliquet. Vivamus ac sollicitudin tortor. Donec varius bibendum dolor, quis sollicitudin velit tempus at. Cras suscipit odio nulla, in fermentum metus vehicula sit amet. Aliquam euismod ultricies dictum.
+
+      Cras vel augue quam. Nunc at semper tortor. Proin scelerisque tristique ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum semper accumsan sapien, ac dignissim dui consectetur sed. Proin nulla orci, sollicitudin et erat at, pellentesque varius mauris. Quisque dignissim facilisis sem, a mattis urna scelerisque vitae. Integer mauris mi, maximus et massa vel, imperdiet accumsan justo. Duis rutrum dictum volutpat. Sed condimentum libero ut luctus vulputate. Phasellus auctor molestie scelerisque.
+      
+      Aliquam quis augue vitae ante sodales interdum. Ut vehicula quam felis, nec dictum ipsum maximus in. Sed ut lectus eros. Sed sagittis massa velit, at laoreet enim gravida vitae. In pharetra nulla tortor, ut placerat velit elementum eget. Nulla faucibus mattis metus, vel convallis mi porttitor ut. Suspendisse id nulla at magna lacinia euismod id sagittis nulla. In lacus elit, tincidunt et rhoncus et, pulvinar nec lectus. Aenean consectetur turpis in ante aliquet lobortis. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer porttitor ut ligula id ultricies. Maecenas sollicitudin risus hendrerit dui porttitor dictum.</p>
+      </section>
+    </aside>
     <footer>
       <p>
         Credit for all images atributed to
@@ -33,7 +47,7 @@
         <a href="https://unsplash.com/@pawel_czerwinski" target="_blank"> Pawel Czerwinski</a>
         All of which can be found on
         <a href="https://unsplash.com/" target="_blank"> Unsplash.com</a>
-      </p>
+      </p> 
     </footer>
   </body>
 </html>

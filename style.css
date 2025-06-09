@@ -9,7 +9,7 @@ body {background-color: #1c2833;}
     grid-template-columns: repeat(12,1fr);
 }
 header, footer {
-    grid-column: 1/13;
+    grid-column: 1/14;
     padding: 1rem;
     border-style: solid;
     border-color: silver;
@@ -81,7 +81,7 @@ nav {
 /* Aside */
 .aside-grid-container {
     display: grid;
-    grid-template-columns:repeat(5,1);
+    grid-template-columns: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
 }
